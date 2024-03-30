@@ -25,7 +25,7 @@ const login=()=>{
     });
   }
   else{
-    axios.post("https://backend-eel0.onrender.com",user)
+    axios.post("https://backend-eel0.onrender.com/login",user)
     .then((res)=>{
       if(res.data.isLoggedIn===true)
       {
