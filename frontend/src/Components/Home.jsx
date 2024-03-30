@@ -23,7 +23,7 @@ const Home = () => {
 
     const send = () => {
         const { name, email, message, recipient } = mess;
-        axios.post("http://localhost:9002/sendm", mess)
+        axios.post("https://backend-eel0.onrender.com/sendm", mess)
             .then(res => {
                 console.log(res);// Call sendMail function after successful axios request
                 navigate("/finish");
